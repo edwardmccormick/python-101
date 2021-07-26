@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../python-101\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../:\Idea Projects\python-101\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
