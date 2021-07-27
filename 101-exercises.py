@@ -216,6 +216,8 @@ print("The plus_two assertions executed appropriately... The second function def
 # Exercise 11
 # Write a function definition for a function named add_one that takes in a number and returns that number plus one.
 
+def add_one(number):
+    return number + 1
 
 assert add_one(2) == 3, "Ensure that the function is defined, named properly, and returns the correct value"
 assert add_one(0) == 1, "Zero plus one is one."
@@ -226,6 +228,12 @@ print("Exercise 11 is correct.")
 # Exercise 12
 # Write a function definition named is_positive that takes in a number and returns True or False if that number is positive.
 
+def is_positive(number):
+    if number > 0:
+        return True
+    else:
+        return False
+
 assert is_positive(positive_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_positive(positive_even_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_positive(negative_odd_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -235,6 +243,12 @@ print("Exercise 12 is correct.")
 
 # Exercise 13
 # Write a function definition named is_negative that takes in a number and returns True or False if that number is negative.
+
+def is_negative(number):
+    if number < 0:
+        return True
+    else:
+        return False
 
 assert is_negative(positive_odd_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_negative(positive_even_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
