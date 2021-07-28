@@ -260,6 +260,13 @@ print("Exercise 13 is correct.")
 # Exercise 14
 # Write a function definition named is_odd that takes in a number and returns True or False if that number is odd.
 
+def is_odd(number):
+    if number % 2 == 1:
+        return True
+    else:
+        return False
+
+
 assert is_odd(positive_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_odd(positive_even_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_odd(negative_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -268,6 +275,9 @@ print("Exercise 14 is correct.")
 
 # Exercise 15
 # Write a function definition named is_even that takes in a number and returns True or False if that number is even.
+
+def is_even(number):
+    return number % 2 == 0
 
 assert is_even(2) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_even(positive_odd_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -279,6 +289,9 @@ print("Exercise 15 is correct.")
 # Exercise 16
 # Write a function definition named identity that takes in any argument and returns that argument's value. Don't overthink this one!
 
+def identity(input):
+    return input
+
 assert identity(fruits) == fruits, "Ensure that the function is defined, named properly, and returns the correct value"
 assert identity(vegetables) == vegetables, "Ensure that the function is defined, named properly, and returns the correct value"
 assert identity(positive_odd_number) == positive_odd_number, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -289,6 +302,8 @@ print("Exercise 16 is correct.")
 
 # Exercise 17
 # Write a function definition named is_positive_odd that takes in a number and returns True or False if the value is both greater than zero and odd
+
+
 
 assert is_positive_odd(3) == True, "Double check your syntax and logic"
 assert is_positive_odd(positive_odd_number) == True, "Double check your syntax and logic"
