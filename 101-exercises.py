@@ -303,7 +303,8 @@ print("Exercise 16 is correct.")
 # Exercise 17
 # Write a function definition named is_positive_odd that takes in a number and returns True or False if the value is both greater than zero and odd
 
-
+def is_positive_odd(number):
+    return is_positive(number) and is_odd(number)
 
 assert is_positive_odd(3) == True, "Double check your syntax and logic"
 assert is_positive_odd(positive_odd_number) == True, "Double check your syntax and logic"
@@ -315,6 +316,9 @@ print("Exercise 17 is correct.")
 # Exercise 18
 # Write a function definition named is_positive_even that takes in a number and returns True or False if the value is both greater than zero and even
 
+def is_positive_even(number):
+    return is_positive(number) and is_even(number)
+
 assert is_positive_even(4) == True, "Double check your syntax and logic"
 assert is_positive_even(positive_odd_number) == False, "Double check your syntax and logic"
 assert is_positive_even(positive_even_number) == True, "Double check your syntax and logic"
@@ -324,6 +328,9 @@ print("Exercise 18 is correct.")
 
 # Exercise 19
 # Write a function definition named is_negative_odd that takes in a number and returns True or False if the value is both less than zero and odd.
+
+def is_negative_odd(number):
+    return is_negative(number) and is_odd(number)
 
 assert is_negative_odd(-3) == True, "Double check your syntax and logic"
 assert is_negative_odd(positive_odd_number) == False, "Double check your syntax and logic"
@@ -336,6 +343,9 @@ print("Exercise 19 is correct.")
 # Exercise 20
 # Write a function definition named is_negative_even that takes in a number and returns True or False if the value is both less than zero and even.
 
+def is_negative_even(number):
+    return is_negative(number) and is_even(number)
+
 assert is_negative_even(-4) == True, "Double check your syntax and logic"
 assert is_negative_even(positive_odd_number) == False, "Double check your syntax and logic"
 assert is_negative_even(positive_even_number) == False, "Double check your syntax and logic"
@@ -345,6 +355,9 @@ print("Exercise 20 is correct.")
 
 # Exercise 21
 # Write a function definition named half that takes in a number and returns half the provided number.
+
+def half(number):
+    return number/2
 
 assert half(4) == 2
 assert half(5) == 2.5
@@ -357,6 +370,9 @@ print("Exercise 21 is correct.")
 # Exercise 22
 # Write a function definition named double that takes in a number and returns double the provided number.
 
+def double(number):
+    return number * 2
+
 assert double(4) == 8
 assert double(5) == 10
 assert double(positive_odd_number) == positive_odd_number * 2
@@ -367,6 +383,9 @@ print("Exercise 22 is correct.")
 
 # Exercise 23
 # Write a function definition named triple that takes in a number and returns triple the provided number.
+
+def triple(n):
+    return n*3
 
 assert triple(4) == 12
 assert triple(5) == 15
@@ -379,6 +398,9 @@ print("Exercise 23 is correct.")
 # Exercise 24
 # Write a function definition named reverse_sign that takes in a number and returns the provided number but with the sign reversed.
 
+def reverse_sign(number):
+    return -number
+
 assert reverse_sign(4) == -4
 assert reverse_sign(-5) == 5
 assert reverse_sign(positive_odd_number) == positive_odd_number * -1
@@ -389,6 +411,9 @@ print("Exercise 24 is correct.")
 
 # Exercise 25
 # Write a function definition named absolute_value that takes in a number and returns the absolute value of the provided number
+
+def absolute_value(number):
+    return abs(number)
 
 assert absolute_value(4) == 4
 assert absolute_value(-5) == 5
@@ -401,6 +426,9 @@ print("Exercise 25 is correct.")
 # Exercise 26
 # Write a function definition named is_multiple_of_three that takes in a number and returns True or False if the number is evenly divisible by 3.
 
+def is_multiple_of_three(number):
+    return number % 3 == 0
+
 assert is_multiple_of_three(3) == True
 assert is_multiple_of_three(15) == True
 assert is_multiple_of_three(9) == True
@@ -410,6 +438,9 @@ print("Exercise 26 is correct.")
 
 # Exercise 27
 # Write a function definition named is_multiple_of_five that takes in a number and returns True or False if the number is evenly divisible by 5.
+
+def is_multiple_of_five(number):
+    return number % 5 == 0
 
 assert is_multiple_of_five(3) == False
 assert is_multiple_of_five(15) == True
