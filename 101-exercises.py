@@ -625,11 +625,14 @@ assert circumference(7) == 43.982297150257104
 print("Exercise 42 is correct.")
 
 ## Functions working with strings
-If you need some guidance working with the next few problems, recommend reading through [this example code](https://gist.github.com/ryanorsinger/f758599c886549e7615ec43488ae514c)
+# If you need some guidance working with the next few problems, recommend reading through [this example code](https://gist.github.com/ryanorsinger/f758599c886549e7615ec43488ae514c)
 
 # Exercise 43
 # Write a function definition named is_vowel that takes in value and returns True if the value is a, e, i, o, u in upper or lower case.
 
+def is_vowel(string):
+    string.lower()
+    return string == "a" or string == "e" or string == "i" or string == "o" or string == "u"
 
 assert is_vowel("a") == True
 assert is_vowel("e") == True
@@ -650,6 +653,22 @@ print("Exercise 43 is correct.")
 
 # Exercise 44
 # Write a function definition named has_vowels that takes in value and returns True if the string contains any vowels.
+
+# def has_vowel(string1):
+#     string = string1.lower()
+#     count = 0
+#     for x in range (0, string.len()):
+#         if (string[x] == "a" or string[x] == "e" or string[x] == "i" or string[x] == "o" or string[x] == "u"):
+#             count+=1
+#     if (count > 0):
+#         return True
+#     else:
+#         return False
+
+def has_vowels(string):
+    vowels = set('aeiou')
+    return any(ch in vowels for ch in string.lower())
+
 
 assert has_vowels("banana") == True
 assert has_vowels("ubuntu") == True
