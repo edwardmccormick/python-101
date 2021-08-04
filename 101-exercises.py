@@ -679,6 +679,13 @@ print("Exercise 44 is correct.")
 # Exercise 45
 # Write a function definition named count_vowels that takes in value and returns the count of the nubmer of vowels in a sequence.
 
+def count_vowels(string):
+    num_vowels=0
+    for char in string:
+        if char in "aeiouAEIOU":
+           num_vowels = num_vowels+1
+    return num_vowels
+
 assert count_vowels("banana") == 3
 assert count_vowels("ubuntu") == 3
 assert count_vowels("mango") == 2
@@ -688,6 +695,13 @@ print("Exercise 45 is correct.")
 
 # Exercise 46
 # Write a function definition named remove_vowels that takes in string and returns the string without any vowels
+
+def remove_vowels(string):
+    num_vowels=0
+    for char in string:
+        if char in "aeiouAEIOU":
+           res_str = string[:i-1] + string[i:]
+    return res_str
 
 assert remove_vowels("banana") == "bnn"
 assert remove_vowels("ubuntu") == "bnt"
